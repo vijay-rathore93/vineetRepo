@@ -6,4 +6,6 @@ import com.example.Entity.UserLoginInformation;
 
 public interface UserLoginRepo extends JpaRepository<UserLoginInformation, Integer>{
 
+	UserLoginInformation findByUserName(String username);
+
 }
